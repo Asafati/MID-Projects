@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pride-background-designify.png" type="image/png">
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <div class="header">
+        <h1>About Me</h1>
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">Aboutpage</a></li>
+                <li><a href="MyHoliday.html">My Holiday</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2>Who Am I?</h2>
+            <p>Hi all my friends, I am a website fan, and here I will introduce who I am</p>
+            <div class="section-header" onclick="toggleContent('biodata')">
+                <img src="foto biodata.jpg" alt="An image" class="responsive-img">
+
+            </div>
+            <div>
+                <div>
+                    <p class="intro-text"> <br>Hello, my name is Asafati Gea. I'm 23 years old and I come from Nias Island, North Sumatra, Indonesia. I am currently
+                    studying at Universitas Advent Indonesia, working toward a Bachelor's degree in Information Systems. I have a deep
+                    passion for technology and am excited to build my career in the field of information systems, where I hope to make a
+                    meaningful impact.</p>
+                    <p><a href="https://youtu.be/ywfkLWrMJGo?feature=shared"target="_blank">link Video</a></p>
+                </div>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('education')">
+                <li class="container">My Education</li>
+            </div>
+            <div id="education" class="section-content" style="display: none;">
+                <p>> SD NEGERI 077282 FADOROBOTOLALA</p>
+                <p>> SMP NEGERI 3 ALASA <a href="https://youtu.be/oYabSST4izo?si=wbwh0l8I4puZenws">link Video</a></p>
+                <p>> SMA NEGERI 2 ALASA <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">link Video</a></p>
+                <p>> Kuliah S1 Jurusan Sistem Informasi <a href="https://youtu.be/1wDYMN7a66Y?si=t2vlQ8XO5t_C_yHK" target="_blank">link Video</a></p>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('experience')">
+                <li class="container">My Experience</li>
+            </div>
+            <div id="experience" class="section-content" style="display: none;">
+                <p>1 year joining the missionary member service <a href="https://youtu.be/wudjzlGbP-k?si=FXdkEqrsUlKR5eTL" target="_blank">link Video</a></p>
+                <p>3 months selling advent books in Jogja</p>
+                <p>6 months as a cooperative collector in Tangerang</p>
+                <p>3 months as a VPS Customer support <a href="https://youtu.be/98PnMHLeq2w?si=Alw9hYA6vnF8VByR" target="_blank">link Video</a></p>
+                <p>1 year as a cook at the UNAI cafeteria <a href="https://youtu.be/2UM5vGMe_u0?si=iHHY969_kwVG4GNr" target="_blank">link Video</a></p>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('skills')">
+                <li class="container">My Skills</li>
+            </div>
+            <div id="skills" class="section-content" style="display: none;">
+                <p>I can play the piano <a href="https://youtube.com/shorts/8xKqxSeLyC8?si=rDHT5clz6IOTexNb" target="_blank">link Video</a></p>
+                <p>I can play the flute</p>
+                <p>I can play the violin</p>
+                <p>I can play the guitar. <a href="https://youtu.be/cdVqcrDgMG8?si=2VABDTseHF8f7CSB" target="_blank">link Video</a>
+                </p>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('hobbies')">
+                <li class="container">Hobbies & Interests</li>
+            </div>
+            <div id="hobbies" class="section-content" style="display: none;">
+                <p>My hobby: Batminton <a href="https://youtu.be/_gSSouw-bh4?si=Slmf7zRQ7H9jbluj" target="_blank">link Video</a></p>
+                <p>My interests: I want to be a Programmer <a href="https://youtube.com/shorts/8oQH05KUnSI?si=5ohkhRlRIhVtPjGf" target="_blank">link Video</a></p>
+            </div>
+
+            <div class="section-header" onclick="toggleContent('ordered-list')">
+                <li class="container">Ordered List</li>
+            </div>
+            <div id="ordered-list" class="section-content" style="display: none;">
+                <ol>
+                    <li>Reading Books</li>
+                    <li>Traveling</li>
+                    <li>Coding</li>
+                </ol>
+                <p><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">link Video</a></p>
+            </div>
+        </div>
+
+        <div class="aside">
+            <h2 class="container">Skills</h2>
+            <p>
+                Web Development, Photography, and Traveling are among my many hobbies and interests.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Asafati Gea. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
