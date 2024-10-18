@@ -1,0 +1,357 @@
+/* Global Styles */
+* {
+    color: black;
+    /* Mengatur warna teks global menjadi hitam */
+    box-sizing: border-box;
+    /* Memastikan padding dan border dimasukkan ke dalam ukuran elemen */
+    margin: 0;
+    /* Menambahkan margin sebesar 1% untuk seluruh elemen */
+    padding: 1%;
+    /* Menambahkan padding sebesar 2px */
+    font-family: 'Arial', sans-serif;
+    /* Mengatur font global ke Arial dengan fallback sans-serif */
+    color: #333;
+    /* Mengatur ulang warna teks global menjadi abu-abu tua */
+    line-height: 1.5;
+    /* Mengatur jarak antar baris teks */
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    /* Mengatur font untuk elemen html */
+    background-color: black;
+    /* Mengatur latar belakang menjadi putih */
+    color: white;
+    /* Mengatur warna teks menjadi hitam */
+    text-overflow: clip;
+    /* Menyembunyikan teks yang meluap */
+}
+
+body {
+    background-image: url('background-hitam.jpg');
+    /* Menambahkan gambar latar belakang */
+    background-size: cover;
+    /* Gambar latar akan menutupi seluruh elemen */
+    background-repeat: no-repeat;
+    /* Gambar latar tidak akan diulang */
+    background-attachment: fixed;
+    /* Gambar latar akan tetap saat halaman digulir */
+    background-position: center;
+    /* Gambar latar berada di tengah */
+    padding: 20px;
+    /* Menambahkan padding sebesar 20px */
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: seashell;
+    /* Mengatur latar belakang header menjadi kuning */
+    background-size: contain;
+    /* Mengatur ukuran latar agar menyesuaikan konten */
+    padding: 20px, 0;
+    /* Padding di atas dan bawah 20px, samping 0 */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+}
+
+/* Container & Grid Layout */
+.container {
+    display: grid;
+    /* Mengatur elemen menjadi grid */
+    grid-template-columns: 1fr 3fr 1fr;
+    /* Membuat tiga kolom dengan ukuran 1:3:1 */
+    grid-gap: 20px;
+    /* Memberi jarak antar elemen grid */
+}
+
+/* Menu */
+.menu {
+    background-color: seashell;
+    /* Latar belakang menu kuning */
+    color: seashell;
+    /* Warna teks hijau */
+    padding: 10px;
+    /* Padding sebesar 10px */
+}
+
+.menu ul {
+    list-style-type: none;
+    /* Menghilangkan bullet pada list */
+    padding: 2px;
+    /* Padding sebesar 2px */
+    margin: 0;
+    /* Menghilangkan margin */
+    background-color: seashell;
+    /* Latar belakang oranye */
+}
+
+.menu li {
+    padding: 20px;
+    /* Padding sebesar 20px */
+    margin-bottom: 8px;
+    /* Margin bawah sebesar 8px */
+    background-color: Gray;
+    /* Latar belakang biru */
+    color: seashell;
+    /* Warna teks kuning */
+    text-align: center;
+    /* Teks di tengah */
+    box-shadow: 0 1px 3px #00796B
+    /* Bayangan kuning di bawah elemen */
+    border-radius: 3px;
+    /* Sudut melengkung sebesar 3px */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Transisi pada perubahan warna dan ukuran */
+}
+
+.menu li:hover {
+    background-color: seashell;
+    /* Latar belakang kuning saat hover */
+    color: seashell;
+    /* Teks kuning saat hover */
+    transform: scale(1.05);
+    /* Membesar sedikit saat hover */
+}
+
+/* Main Content */
+.main {
+    background-color: seashell;
+    /* Latar belakang kuning */
+    padding: 20px;
+    /* Padding sebesar 20px */
+}
+
+.section-header {
+    cursor: pointer;
+    /* Kursor berubah menjadi pointer */
+    transition: transform 0.2s;
+    /* Transisi transformasi */
+    background-color: seashell;
+    /* Latar belakang kuning */
+}
+
+.section-header:hover {
+    transform: scale(1.05);
+    /* Membesar sedikit saat hover */
+    background-color: seashell;
+    /* Latar belakang tetap kuning */
+}
+
+.info-box {
+    background-color: seashell;
+    /* Latar belakang kuning */
+    border-radius: 20px;
+    /* Sudut melengkung sebesar 20px */
+    padding: 20px;
+    /* Padding sebesar 20px */
+    box-shadow: 0 4px 8px seashell;
+    /* Bayangan kuning */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Transisi transformasi dan bayangan */
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    /* Bergeser ke atas 5px saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Bayangan lebih besar dan lebih gelap saat hover */
+}
+
+/* Aside */
+.aside {
+    background-color: seashell;
+    color: black; /* Mengatur warna teks agar kontras */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px #ccc; /* Bayangan yang lebih halus */
+}
+
+
+/* Footer */
+.footer {
+    background-color: seashell;
+    /* Latar belakang kuning */
+    color: seashell;
+    /* Teks kuning */
+    padding: 15px;
+    /* Padding sebesar 15px */
+    text-align: center;
+    /* Teks di tengah */
+    font-size: 11px;
+    /* Ukuran font 11px */
+}
+
+/* Image Responsiveness */
+.responsive-img {
+    height: auto;
+    /* Tinggi otomatis mengikuti lebar */
+    max-width: 200px;
+    /* Lebar maksimum 200px */
+    aspect-ratio: 3 / 4;
+    /* Proporsi aspek gambar 3:4 */
+    background-color: blue;
+    /* Latar belakang biru */
+}
+
+/* Media Queries */
+@media only screen and (min-width: 480px) {
+    .container {
+        grid-template-columns: 1fr 3fr 1fr;
+        /* Layout 3 kolom pada layar lebih lebar dari 480px */
+    }
+
+    .responsive-img {
+        max-width: 300px;
+        /* Lebar maksimum 300px */
+        background-color: seashell;
+        /* Latar belakang hijau */
+        display: block;
+        /* Menampilkan gambar sebagai blok */
+        margin: 0 auto;
+        /* Pusatkan gambar secara horizontal */
+    }
+
+    .container {
+        grid-template-columns: 1fr 2fr 1fr;
+        /* Ubah layout kolom jadi 1:2:1 */
+    }
+}
+
+/* Intro Text */
+.intro-text {
+    text-align: justify;
+    /* Meratakan teks ke kiri dan kanan */
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    /* Mengatur galeri menjadi grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom dengan lebar yang sama */
+    grid-gap: 16px;
+    /* Jarak antar elemen grid sebesar 16px */
+    background-image: red;
+    /* Properti tidak valid, seharusnya background-color */
+}
+
+.gallery img {
+    width: 100%;
+    /* Lebar gambar 100% dari elemen pembungkus */
+    max-width: 100%;
+    /* Lebar maksimum 100% */
+    height: auto;
+    /* Tinggi otomatis */
+    aspect-ratio: 3 / 4;
+    /* Proporsi aspek gambar 3:4 */
+    object-fit: cover;
+    /* Memastikan gambar menutupi elemen dengan rasio yang benar */
+    border-radius: 10px;
+    /* Sudut gambar melengkung sebesar 10px */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Transisi transformasi dan bayangan */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    /* Membesar sedikit saat hover */
+    box-shadow: 0 8px 16px darkred;
+    /* Bayangan kuning saat hover */
+    background-color: blue;
+    /* Latar belakang biru (tidak relevan untuk gambar) */
+}
+
+@media (min-width: 700px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        /* Layout galeri tetap 3 kolom pada layar lebih lebar dari 700px */
+    }
+         .menu ul {
+             flex-direction: column;
+             /* Menu jadi kolom */
+         }
+
+         .header,
+         .footer {
+             padding: 15px;
+             /* Tambah padding untuk header dan footer */
+         }
+
+         .main {
+             padding: 10px;
+             /* Tambah padding untuk elemen utama */
+         }
+}
+
+/* Registration Form */
+.registrationForm {
+    width: 90%;
+    /* Lebar form 90% pada perangkat kecil */
+    max-width: 600px;
+    /* Lebar maksimum 600px */
+    margin: auto;
+    /* Memusatkan form */
+    padding: 20px;
+    /* Padding yang lebih kecil */
+    border: 1px solid #ccc;
+    /* Border abu-abu muda */
+    border-radius: 10px;
+    /* Sudut melengkung lebih kecil */
+    background-color: seashell;
+    /* Latar belakang kuning */
+}
+.form-group {
+    display: flex;
+    /* Menggunakan flexbox untuk form group */
+    flex-direction: column;
+    /* Mengatur arah kolom */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    /* Jarak antara label dan input */
+}
+
+.form-group input {
+    padding: 10px;
+    /* Padding untuk input */
+    border: 1px solid #ccc;
+    /* Border untuk input */
+    border-radius: 5px;
+    /* Sudut melengkung pada input */
+}
+/* Button Submit */
+.btn-submit {
+    display: block;
+    /* Membuat tombol menjadi block untuk memusatkan */
+    margin: 20px auto;
+    /* Memberikan margin atas dan bawah 20px, serta memusatkan secara horizontal */
+    padding: 10px 20px;
+    /* Menambahkan padding untuk tombol */
+    background-color: green;
+    /* Warna latar belakang tombol */
+    color: white;
+    /* Warna teks tombol */
+    border: none;
+    /* Menghilangkan border */
+    border-radius: 5px;
+    /* Sudut melengkung */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+}
+
+.btn-submit:hover {
+    background-color: #005f53;
+    /* Warna latar belakang saat hover */
+}
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    .registrationForm {
+        width: 50%;
+        /* Lebar form 50% pada perangkat besar */
+        padding: 50px;
+        /* Kembali ke padding yang lebih besar */
+    }
+}
